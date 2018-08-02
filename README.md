@@ -11,6 +11,7 @@ The core of the bot is built using python 3.5 with keras library, so you should 
 ### Installing
 
 You should install the libraries written in recs.txt
+
 Warning: If you have h5py library version 2.8.0 or higher, it may not load the weights correctly.
 
 Open a new cmd window and run:
