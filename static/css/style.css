@@ -1,0 +1,722 @@
+* {
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: helv;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: helv;
+    src: url('fonts/helv.ttf');
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+    padding: 25px 50px;
+    background-color: #b6ff00;
+    height: 20%;
+    background-image: url('bg-hdr1.jpg');
+    -moz-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header-element {
+    -webkit-text-shadow: 0 0 1px;
+    text-shadow: 0 0 1px;
+    -moz-box-shadow: 0 0 1px #dc0099;
+    -webkit-box-shadow: 0 0 1px #dc0099;
+    box-shadow: 0 0 1px #dc0099;
+    text-align: center;
+    background-color: #dc0099;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    height: 100%;
+    line-height: 1;
+    font-size: 30px;
+}
+
+.store-name {
+    width: 300px;
+    margin-left: 40px;
+    font-family: cursive;
+    font-weight: 600;
+}
+
+.store-name:hover {
+    cursor: default;
+}
+
+.about {
+    width: 200px;
+    margin-right: 40px;
+    float: right;
+    font-weight: 600;
+}
+
+.about:hover {
+    background-color: #470032;
+    cursor: pointer;
+    -moz-box-shadow: 0 0 1px #470032;
+    -webkit-box-shadow: 0 0 1px #470032;
+    box-shadow: 0 0 1px #470032;
+
+}
+
+.animate-top {
+    position: relative;
+    -moz-animation: animatetop 0.4s;
+    -o-animation: animatetop 0.4s;
+    -webkit-animation: animatetop 0.4s;
+    animation: animatetop 0.4s;
+}
+
+@keyframes animatetop {
+    from {
+        top: -100px;
+        -moz-opacity: 0;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        -moz-opacity: 1;
+        opacity: 1;
+    }
+}
+
+.animate-right {
+    position: relative;
+    -moz-animation: animateright 0.4s;
+    -o-animation: animateright 0.4s;
+    -webkit-animation: animateright 0.4s;
+    animation: animateright 0.4s;
+}
+
+@keyframes animateright {
+    from {
+        right: -100px;
+        -moz-opacity: 0;
+        opacity: 0;
+    }
+    to {
+        right: 0;
+        -moz-opacity: 1;
+        opacity: 1;
+    }
+}
+
+.animate-left {
+    position: relative;
+    -moz-animation: animateleft 0.4s;
+    -o-animation: animateleft 0.4s;
+    -webkit-animation: animateleft 0.4s;
+    animation: animateleft 0.4s;
+}
+
+@keyframes animateleft {
+    from {
+        left: -100px;
+        -moz-opacity: 0;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        -moz-opacity: 1;
+        opacity: 1;
+    }
+}
+
+.animate-bottom {
+    position: relative;
+    -moz-animation: animatebottom 0.4s;
+    -o-animation: animatebottom 0.4s;
+    -webkit-animation: animatebottomt 0.4s;
+    animation: animatebottom 0.4s;
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        -moz-opacity: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        -moz-opacity: 1;
+        opacity: 1;
+    }
+}
+
+.devs-shadow {
+    width: 70%;
+    -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.devs {
+    background-color: white;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px 40px 20px 40px;
+}
+
+.store-body {
+    height: 80%;
+    padding: 20px 40px;
+    background-color: #cedcff;
+}
+
+.store-body:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.store-imgs {
+    /*background-image: url('bg-img.jpg');*/
+    padding: 10px;
+    /*display: none;*/
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    width: 100%;
+    z-index: 1;
+}
+
+.store-imgs div .img-id {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 25px;
+    background-color: #dc0099;
+    color: white;
+    width: 35px;
+    height: 35px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    line-height: 1;
+}
+
+.store-imgs img {
+    color: white;
+    /* margin-left: 15px; */
+    cursor: pointer;
+    width: auto;
+    height: 220px;
+    /*border-radius: 5px;
+        border: solid 3px #ddd;*/
+}
+
+/*.store-imgs img:hover {
+            border: solid 3px #009628;
+            box-shadow: 0 4px 8px 0 rgba(0, 100, 0, 0.2), 0 6px 20px 0 rgba(0, 100, 0, 0.19);
+        }*/
+
+.img-cont {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    border: solid 2px transperant;
+    display: inline-flex;
+    background-color: rgb(237, 127, 203);
+    margin: 30px 0 0 30px;
+    -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-transition: box-shadow 0.2s;
+    -o-transition: box-shadow 0.2s;
+    -webkit-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+}
+
+.img-cont:hover {
+    /* border: solid 3px #009628; */
+    -moz-box-shadow: 0 4px 20px 5px rgba(237, 127, 203, 0.5), 0 4px 20px 0 rgba(0, 50, 0, 0.39);
+    -webkit-box-shadow: 0 4px 20px 5px rgba(237, 127, 203, 0.5), 0 4px 20px 0 rgba(0, 50, 0, 0.39);
+    box-shadow: 0 4px 20px 5px rgba(237, 127, 203, 0.5), 0 4px 20px 0 rgba(0, 50, 0, 0.39);
+}
+
+.btns {
+    /* margin-left: 15px; */
+    padding: 3px 12px;
+    margin: auto;
+    /* background-color: #b6ff00; */
+}
+
+.btn {
+    border: none;
+    display: inline-block;
+    padding: 1px 0;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 70px;
+    margin: 0 4px;
+    color: white;
+    background-color: #6f00c3;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background-color: #2f2f2f;
+}
+
+.fh {
+    float: left;
+    height: 100%;
+    padding: 10px;
+}
+
+.flx {
+    display: flex;
+}
+
+.fh1 {
+    /* border: 2px solid green; */
+    height: 100%;
+    position: relative;
+    background-color: #ffffff;
+    -moz-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.store {
+    width: 65%;
+}
+
+.chat {
+    width: 35%;
+}
+
+.chat-box {
+    position: absolute;
+    width: 100%;
+    height: 13%;
+    -moz-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.5);
+    bottom: 0;
+}
+
+.chat-box button {
+    width: 20%;
+    height: 100%;
+    float: right;
+    cursor: pointer;
+    border: none;
+    /* border-top: solid #009628; */
+    /* border-left: solid #009628; */
+    /* border-radius: 0 0 5px 0; */
+    text-align: center;
+    text-decoration: none;
+    -moz-outline: none;
+    outline: none;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.chat-box button:hover {
+    background-color: #808080;
+}
+
+.chat-box textarea {
+    width: 80%;
+    height: 100%;
+    padding-top: 5px;
+    padding-right: 5px;
+    resize: none;
+    border: none;
+    /* border-top: solid #009628; */
+    /* border-radius: 0 0 0 5px; */
+    -moz-outline: none;
+    outline: none;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.chat-box textarea:focus, .chat-box textarea:hover {
+    background-color: #ddd;
+}
+
+#msg-ul {
+    height: 87%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 15px;
+    list-style-type: none;
+}
+
+#msg-ul li {
+    font-size: 20px;
+    direction: rtl;
+    display: inline-block;
+    clear: both;
+    position: relative;
+    padding: 5px 20px;
+    text-align: right;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    -ms-word-break: break-word;
+    word-break: break-word;
+    line-height: 1.4;
+}
+
+.him {
+    background: #ffa9e5;
+    float: left;
+    margin-right: 20px;
+    -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.him:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-right-color: #ffa9e5;
+    border-left: 0;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+
+.me {
+    float: right;
+    background: #6f00c3;
+    color: #fff;
+    margin-left: 20px;
+    -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.me:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-left-color: #6f00c3;
+    border-right: 0;
+    margin-top: -8px;
+    margin-right: -8px;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.dv1 {
+    -moz-opacity: 0.2;
+    opacity: 0.2;
+    border-bottom: solid 1px white;
+    margin-top: 10px;
+}
+
+.dv2 {
+    opacity: 0.2;
+    border-bottom: solid 1px black;
+    margin-top: 10px;
+}
+
+#bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg-img.jpg');
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+@media screen and (max-width: 780px) {
+    .header, .store-body {
+        height: auto;
+    }
+    .store, .chat {
+        width: auto;
+    }
+    .fh {
+        float: none;
+    }
+    .chat {
+        height: 700px;
+    }
+    .store-imgs, #msg-ul {
+        height: 600px;
+    }
+    .store-name, .about {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .store-name, .about {
+        font-size: 12px;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 12;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.modal-img-content {
+    position: relative;
+    margin: auto;
+    display: block;
+    float: left;
+    width: auto;
+    height: 100%;
+    max-width: 700px;
+    border: double 22px #ddd;
+    border-radius: 20px;
+    -moz-animation-name: zoom;
+    -o-animation-name: zoom;
+    -webkit-animation-name: zoom;
+    animation-name: zoom;
+    -moz-animation-duration: 0.3s;
+    -o-animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+    from {
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    to {
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+#close1 {
+    /*position: absolute;
+    top: 15px;
+    right: 200px;*/
+    line-height: 1;
+    float: right;
+    color: #f1f1f1;
+    font-size: 200px;
+    font-weight: bold;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#close1:hover, #close1:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-img-content, .modal-dev-content {
+        width: 100%;
+    }
+}
+
+.modal-dev-content {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: auto;
+    max-width: 700px;
+}
+
+#close2 {
+    float: left;
+    line-height: 0.8;
+    color: #f1f1f1;
+    font-size: 100px;
+    font-weight: bold;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#close2:hover, #close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-log-content {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: auto;
+    max-width: 700px;
+    background-color: #c3c3c3;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 100px;
+    direction: rtl;
+}
+
+#nm {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 22px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+#wlcm {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #880E4F;
+    border-radius: 50px;
+    background-color: #F8BBD0;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+    padding-left: 40px;
+    margin-left: 60px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #880E4F;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.modal-log-content button {
+    width: 100%;
+    margin: auto;
+    display: block;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #880E4F;
+    color: white;
+    outline: none;
+    padding: 5px;
+}
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 60px;
+    z-index: 20;
+    color: white;
+    padding: 20% 0;
+    background-color: rgba(167, 0, 108, 1);
+}

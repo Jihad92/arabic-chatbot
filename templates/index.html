@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fashion</title>
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+
+</head>
+
+<body>
+    <div id="ld" class="loading">جارٍ تحميل الصفحة. الرجاء الانتظار</div>
+    <div class="header">
+        <span class="header-element store-name">POMPELO</span>
+        <a class="header-element about">عن المطورين</a>
+    </div>
+    <div class="store-body">
+        <div class="store fh">
+            <div class="fh1 flx">
+                <div id="bg-img"></div>
+                <div class="store-imgs">
+                </div>
+            </div>
+        </div>
+        <div class="chat fh">
+            <div class="fh1">
+                <ul id="msg-ul">
+                </ul>
+                <div class="chat-box">
+                    <textarea wrap="off" placeholder="اسأل سؤالاً ..." dir="rtl"></textarea>
+                    <button id="send">
+                        أرسل
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="login" class="modal" style="padding: 10px 20%">
+        <div class="modal-log-content">
+            <p id="wlcm">أهلا وسهلا بك في متجرنا</p>
+            <label style="font-size: 22px" for="nm">اسم الزبون:</label>
+            <input type="text" id="nm" name="uname" dir="rtl" placeholder="من فضلك, أدخل اسمك...">
+            <label class="container" onclick="genChoose(true)">ذكر
+                <input id="ml" type="radio" name="radio" checked value="male">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" onclick="genChoose(false)">أنثى
+                <input id="fl" type="radio" name="radio" value="female">
+                <span class="checkmark"></span>
+            </label>
+            <button type="button" onclick="log_in()">إدخل إلى المتجر</button>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal" style="padding: 10px 20%;">
+        <span id="close1">&times;</span>
+        <img class="modal-img-content" id="img01" />
+    </div>
+
+    <div id="myModal1" class="modal" style="padding: 70px;">
+        <div class="modal-dev-content animate-top devs-shadow">
+            <header style="direction: rtl; padding: 5px 40px; background-color: dodgerblue;">
+                <p style="display: inline-block; font-size: 45px; color: white">المطورون</p>
+                <span id="close2">&times;</span>
+            </header>
+            <p class="devs">جهاد ديوب</p>
+            <p class="devs">رشاد خرما</p>
+            <p class="devs">روان ابراهيم</p>
+            <footer style="background-color: dodgerblue; color: white; text-align: left; padding: 0 40px;">
+                <p style="padding: 10px 5px;">
+                    كلية الهندسة المعلوماتية - جامعة تشرين - مدينة اللاذقية
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{{url_for('static',filename='js/Script.js')}}"></script>
+    <!-- <script src="js/Script.js"></script> -->
+</body>
+
+</html>
