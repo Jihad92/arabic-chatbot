@@ -8,13 +8,10 @@ A simple website featuring a chatbot for hypothetical clothing store.
 
 The core of the bot is built using python 3.5 with keras library, so you should have python installed.
 
-```
-Give examples
-```
-
 ### Installing
 
 You should install the libraries written in recs.txt
+Warning: If you have h5py library version 2.8.0 or higher, it may not load the weights correctly.
 
 Open a new cmd window and run:
 
@@ -25,7 +22,7 @@ cd path/to/project
 Then, run:
 
 ```
-pip install –r recs.txt
+pip install â€“r recs.txt
 ```
 
 ## Built With
