@@ -34,3 +34,8 @@ pip install –r recs.txt
 ## Contributing
 
 I appreciate any effort to improve the project and would be grateful for any small note that makes the project better and more professional.
+
+## TODO
+
+* Additional commenting needed
+* Recreate it using [Reactjs](https://reactjs.org/)
