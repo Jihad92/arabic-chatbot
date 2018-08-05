@@ -38,4 +38,6 @@ I appreciate any effort to improve the project and would be grateful for any sma
 ## TODO
 
 * Additional commenting needed
-* Recreate it using [Reactjs](https://reactjs.org/)
+* Use Reactjs for frontend
+* Use Symfony for backend
+* Enhancing the keras model
