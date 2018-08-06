@@ -16,7 +16,7 @@ Warning: If you have h5py library version 2.8.0 or higher, it may not load the w
 
 You may first create a virtual environment for the project:
 
-# On Windows 7:
+#### On Windows 7:
 Open a new cmd window and run:
 
 ```
@@ -36,6 +36,15 @@ Then, install required libraries:
 ```
 pip install –r recs.txt
 ```
+### Training:
+
+Run the file ```train.py``` from python IDLE or you may run it from cmd by running the following:
+
+``` python train.py -ep 100 -bs 64 -n 256 ```
+
+Note that each of the command arguments has a default value so you may remove it if you want.
+
+### Usage:
 
 To run the website, right-click at ```server.py```  and choose Edit with IDLE, then run the script ```F5```.
 Or, you may run it from cmd by running the following command at the same project directory:
@@ -44,7 +53,7 @@ Or, you may run it from cmd by running the following command at the same project
 python server.py
 ```
 
-# On Ubuntu:
+#### On Ubuntu:
 
 comming soon..
 
