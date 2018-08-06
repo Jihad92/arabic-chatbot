@@ -16,7 +16,7 @@ Warning: If you have h5py library version 2.8.0 or higher, it may not load the w
 
 You may first create a virtual environment for the project:
 
-On Windows 7:
+# On Windows 7:
 Open a new cmd window and run:
 
 ```
@@ -24,6 +24,13 @@ cd path/to/project
 python -m venv my_env         \\ Create venv
 my_env\Scripts\activate.bat   \\ Activate venv
 ```
+
+Before installing libraries, you should upgrade ```pip``` to the latest version to avoid potential errors:
+
+```
+python -m pip install --upgrade pip
+```
+
 Then, install required libraries:
 
 ```
@@ -37,7 +44,9 @@ Or, you may run it from cmd by running the following command at the same project
 python server.py
 ```
 
-Warning: Running with cmd still cause errors.
+# On Ubuntu:
+
+comming soon..
 
 
 ## Built With
