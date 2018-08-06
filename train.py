@@ -12,7 +12,6 @@ parser.add_argument('-bs', nargs=1, default=['64'])
 parser.add_argument('-ep', nargs=1, default=['100'])
 
 args = parser.parse_args()
-print(args)
 n = int(args.n[0])
 bs = int(args.bs[0])
 ep = int(args.ep[0])

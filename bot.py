@@ -277,12 +277,10 @@ class BotModel():
                     qst[j] = i
 
         qst = sorted(qst)
-        print(qst)
 
         for i, w in enumerate(qst):
             tmp[0, i] = self.dataHolder.inWordsIds.get(w, 0)
 
-        print(tmp)
         statesValue = self.encoderModel.predict(tmp)
 
         targetSeq = np.zeros((1, 1))
