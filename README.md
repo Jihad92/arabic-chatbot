@@ -74,7 +74,7 @@ I appreciate any effort to improve the project and would be grateful for any sma
 
 ## TODO
 
-* Weghits file needs update
+* Weights file needs update
 * Additional commenting needed
 * Use Reactjs for frontend
 * Use Django or Symfony for backend
